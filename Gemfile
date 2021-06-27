@@ -35,3 +35,8 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'mongoid', '~> 7.0.5'
+
+gem 'capistrano'
+gem 'capistrano-rails'
+gem 'capistrano-bundler'
+gem 'capistrano-rbenv'
