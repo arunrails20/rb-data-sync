@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.16.0"
 
-set :puma_conf, "/var/www/trackerr/shared/config/puma.rb"
+set :puma_conf, "/var/www/rb-data-sync/shared/config/puma.rb"
 set :application, 'rb-data-sync' 
 set :repo_url, 'git@github.com:arunrails20/rb-data-sync.git'
 set :deploy_to, '/home/ubuntu/rb-data-sync'
