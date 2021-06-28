@@ -4,7 +4,7 @@ p "------------------------------------here the deploy file---------------------
 set :puma_conf, "/var/www/rb-data-sync/shared/config/puma.rb"
 set :application, 'rb-data-sync' 
 set :repo_url, 'git@github.com:arunrails20/rb-data-sync.git'
-set :deploy_to, '/home/ubuntu/rb-data-sync'
+set :deploy_to, '/var/www/rb-data-sync'
 set :use_sudo, true
 set :branch, 'main'
 set :linked_files, %w{config/master.key }
