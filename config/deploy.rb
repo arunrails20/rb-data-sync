@@ -2,7 +2,6 @@
 lock "~> 3.16.0"
 p "------------------------------------here the deploy file----------------------------"
 set :puma_conf, "/var/www/rb-data-sync/shared/config/puma.rb"
-set :puma_bind, "unix://var/www/rb-data-sync/shared/tmp/sockets/puma.sock"    #accept array for multi-bind
 set :application, 'rb-data-sync' 
 set :repo_url, 'git@github.com:arunrails20/rb-data-sync.git'
 set :deploy_to, '/var/www/rb-data-sync'
