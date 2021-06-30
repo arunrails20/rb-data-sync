@@ -67,5 +67,5 @@ server '18.117.82.63', user: 'ubuntu', roles: %w{web app db}
 set :ssh_options, { 
   forward_agent: true, 
   auth_methods: %w[publickey],
-  keys: %w[~/server-keys/efrl-rb-data-sync.pem]
+  keys: %w[~/server-keys/eflt-recovery-instance.pem]
 }

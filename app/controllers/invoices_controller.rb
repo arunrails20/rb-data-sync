@@ -3,7 +3,7 @@ class InvoicesController < ApplicationController
 
   # GET /invoices
   def index
-    @invoices = Invoice.all
+    @invoices = Invoice.order_by("created_at desc").limit(100)
 
     render json: @invoices
   end
@@ -15,7 +15,7 @@ class InvoicesController < ApplicationController
 
   # POST /invoices
   def create
-    @invoice = Invoice.new(invoice_params)
+    @invoice = Invoice.new({body: request.parameters.except(:controller, :action)})
 
     if @invoice.save
       render json: @invoice, status: :created, location: @invoice
